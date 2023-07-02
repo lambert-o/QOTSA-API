@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver: org.postgresql.Driver
-    url: jdbc:postgresql://localhost/mydatabase
+    url: jdbc:postgresql://localhost/qotsa_db
     username: postgres
     password: postgres
 

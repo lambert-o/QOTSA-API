@@ -1,0 +1,136 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create schema and tables and populate with data
+      author: Owen Lambert
+      changes:
+        - sql:
+            comment: Create initial schema
+            endDelimiter: ;GO
+            splitStatements: true
+            sql:
+              CREATE SCHEMA IF NOT EXISTS QOTSA;
+        - createTable:
+            tableName: songs
+            schemaName: qotsa
+            columns:
+              - column:
+                  name: song_id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: title
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: album
+                  type: int
+              - column:
+                  name: duration
+                  type: interval
+                  constraints:
+                    nullable: false
+              - column:
+                  name: lyrics
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: written_by
+                  type: text[]
+                  constraints:
+                    nullable: false
+              - column:
+                  name: spotify_url
+                  type: text
+        - createTable:
+            tableName: albums
+            schemaName: qotsa
+            columns:
+              - column:
+                  name: album_id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: title
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: number_of_songs
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: duration
+                  type: interval
+                  constraints:
+                    nullable: false
+              - column:
+                  name: release_date
+                  type: date
+                  constraints:
+                    nullable: false
+              - column:
+                  name: spotify_url
+                  type: text
+        - addForeignKeyConstraint:
+            baseTableSchemaName: qotsa
+            baseTableName: songs
+            baseColumnNames: album
+            referencedTableSchemaName: qotsa
+            referencedTableName: albums
+            referencedColumnNames: album_id
+            constraintName: fk_songs_albums
+        - sql:
+            comment: Insert albums
+            endDelimiter: ;GO
+            splitStatements: true
+            sql:
+              INSERT INTO qotsa.albums(title, number_of_songs, duration, release_date, spotify_url)
+                VALUES ('Queens of the Stone Age', 11, '46 minutes 27 seconds', '1998-09-22', 'https://open.spotify.com/album/0PSTqZ8cInMb1Wr68Uqdwp?si=7WqTEOlNTKaCdfhxeAf8Vg');
+              INSERT INTO qotsa.albums(title, number_of_songs, duration, release_date, spotify_url)
+                VALUES ('Rated R', 11, '42 minutes 10 seconds', '2000-06-06', 'https://open.spotify.com/album/10UBEkRjqtl0iT2BRAwcto?si=Ieg7FCCLQXipjQD9lqeO5A');
+              INSERT INTO qotsa.albums(title, number_of_songs, duration, release_date, spotify_url)
+                VALUES ('Songs For The Deaf', 14, '1 hour 53 seconds', '2002-08-27', 'https://open.spotify.com/album/4w3NeXtywU398NYW4903rY?si=ZbTs8jbPQYaYIZ1u10ONfg');
+              INSERT INTO qotsa.albums(title, number_of_songs, duration, release_date, spotify_url)
+                VALUES ('Lullabies To Paralyze', 14, '59 minutes 26 seconds', '2005-03-22', 'https://open.spotify.com/album/68ZycIjwlQ0fvtaxVXmgn8?si=kzqKetHnShqIgzrOxKvnZg');
+              INSERT INTO qotsa.albums(title, number_of_songs, duration, release_date, spotify_url)
+                VALUES ('Era Vulgaris', 11, '47 minutes 24 seconds', '2007-06-12', 'https://open.spotify.com/album/3wKSN4J9IZ1fhsaAqC2jB5?si=aO-PSiZzTFCv2pRDudw-uA');
+              INSERT INTO qotsa.albums(title, number_of_songs, duration, release_date, spotify_url)
+                VALUES ('...Like Clockwork', 10, '45 minutes 59 seconds', '2010-06-03', 'https://open.spotify.com/album/5T5NM01392dvvd4EhGrCnj?si=y3raDaART7KoTk5O3Jt5Kg');
+              INSERT INTO qotsa.albums(title, number_of_songs, duration, release_date, spotify_url)
+                VALUES ('Villains', 9, '48 minutes', '2017-08-25', 'https://open.spotify.com/album/7vuIN24G18PAUAvjnICyA6?si=9plP0cuoSCKpfHQ8MMAEVw');
+              INSERT INTO qotsa.albums(title, number_of_songs, duration, release_date, spotify_url)
+                VALUES ('In Times New Roman...', 10, '47 minutes 37 seconds', '2023-06-16', 'https://open.spotify.com/album/2ZTDmH94OLjeNaOvT7Ngwk?si=LGFjMdw3SBSXhbimUQDg2g');
+        - sql:
+            comment: Insert songs
+            endDelimiter: ;GO
+            splitStatements: true
+            sql:
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Regular John', 1, '4 minutes 35 seconds', 'Who are you girl?\nWho are you boy?\nBet I know what you''re up to\nCan I come along?\nYour home number on the wall\nI just had to call, had to\nI''m not the only one\nWho will run with a knife\nOpen up your eyes\nOpen up your room\nOpen up your arms\nOne, six, two, seven, eight\nTwo, six, three, seven, eight, nine\nWhere''s your daddy now?\nI heard he ran away\nWho are you girl?\n''Cause I''m so bored with myself\nAnyway, anytime and any place\nI''ll just hang around\nOpen up your eyes\nOpen up your room\nOpen up your arms\nOne, six, two, seven, eight\nTwo, six, three, seven, eight, nine\nOpen up your eyes\nOpen up your room\nOpen up your arms\nOpen up your door\nOpen up your eyes\nOpen up your room\nOpen up your arms', ARRAY['Josh Homme', 'Alfredo Hernandez', 'John McBain'], 'https://open.spotify.com/track/0R0m9mTXa81zp1qtcU3dSR?si=3f761edcdc2b4279');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Avon', 1, '3 minutes 22 seconds', 'I see you go\nThrough a park in a haze\nAnd I don''t listen\nFor traffic going the same way\nA simple system\nYeah\nI string ''em up\nI cut ''em down\nDare I say\nTo to to to to\nTo to to to to\nTo to to to to\nA perfect vision\nSome simple ways to let you know\nFree range humans all cooped up\nNaked clone is playing lame\nYeah\nI string ''em up\nI cut ''em down\nDare I say\nTo to to to to\nTo to to to to\nTo to to to to\nTo to to to to\nTo to to to to\nTo to to\nTo to to', ARRAY['Josh Homme'], 'https://open.spotify.com/track/5xWSuhvOJUaO3zrXYxsSAS?si=cb838aa9e8374bd2');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('If Only', 1, '3 minutes 20 seconds', 'If it gets you down, well then I''ll take it\nIf it gets you up, well I don''t want it\nIt let you down so broken-hearted\nIf it gets you down, well then I want it\n\nIf only, only\nIf only, only\nIf only, only\nIf only, only\nWe''re nothing at all\n\nSo blow our mind and make it lazy\nThose long long days with no escaping\nI hold the wheel to let it go\nDon''t wanna stop, don''t wanna know\nIf it gets you down, well just don''t blame me\n\nIf only, only\nIf only, only\nIf only, only\nIf only, only\nIf only, only\nIf only, only\nIf only, only\nIf only, only\nWe''re nothing at all', ARRAY['Josh Homme'], 'https://open.spotify.com/track/60wTHSJ0PxxwZDiSLiFaQX?si=99efe676114b4f1e');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Walkin'' on the Sidewalks', 1, '5 minutes 3 seconds', 'Got some action on the other side\nLoose teeth in my head\nNew programs are coming in\nSo rise and take your oath\nI wish we could get away\nDrink wine and screw\nI knew someone else before\nLooked a lot like you\nAnd they''re gone\nI''m gone\nIn space\nI been programed as I said before\nTechnology\nJust rollin'', wheezin'' and breathin''\nEyeballs and teeth\nWords are weightless here on earth because they''re free\nYou knew someone else before\nLooked a lot like me\nAnd they''re gone\nI''m gone\nIn space\nAnd they''re gone\nI''m gone\nIn space', ARRAY['Josh Homme', 'Alfredo Hernandez'], 'https://open.spotify.com/track/019NbzC0iGVq16q2lyHRHM?si=396fb01b03424d3e');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('You Would Know', 1, '4 minutes 16 seconds', 'Me just happy robot\nLive on hill of beans\nYou and I cut from same cloth\nRippin'' at the seams\nCut, snip, cut\nDon''t forget to remember\nThe devil''s got pills in his eyes\nLook, laugh, but don''t touch\nCut you down to size\nCut, up, cut (shut up)\nCut, up, cut\nYou would know\nMy girl''s all out of focus\nI ain''t no big surprise\nDaddy got his gun loaded\nGot cross hairs in his eyes\nShot up, oh\nShot up, oh\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know\nYou would know', ARRAY['Josh Homme', 'Alfredo Hernandez'], 'https://open.spotify.com/track/7LLrRMoRcMVfHEZbVftLmh?si=c89f3d2b2c8f4ba9');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('How to Handle a Rope', 1, '3 minutes 30 seconds', 'Too late to think & filter anymore\nA bitter pill to swallow cause maybe you''re..\n..In a blanket haze of ephedrine\nI''m wonderin'' where the hell you been\nSo come on and right this wrong, you know\nYou got it all right\nYou got a feeling\nI''d rather open up my wrist, let it go\nYou got it all right\nYou got a feeling\nThere''s devils and ropes around your neck\nYou can''t even know\nYou can''t hear it?\nCan''t hear it\nAin''t got a mind to deal with anymore\nSaboteur! infiltrator! maybe more.\nIf you''re not blind and deaf, how can we pollute your head?\nSo come on and right this wrong, you know\nAnd I got it all right\nI got a feeling\nYou''d rather open up your wrist, and let it go\nI got it all right, yeah\nI got a feeling\nThere''s devils and ropes around my neck I can''t even know\n''Cause they can''t hear it\nCan''t hear it\nCan''t hear it\nCan''t hear it', ARRAY['Josh Homme', 'Alfredo Hernandez'], 'https://open.spotify.com/track/6yC0zhet5RT7tMJRoE8eFh?si=d10925b8ba704042');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Mexicola', 1, '4 minutes 54 seconds', 'Setting sun deals hands of gold\nThere''s velvet eyes in Mexico\nJust a fall away and all she said was true\nSpeak in tongues, speak in lies\nDrooling livers, born to die\nIt''s a wonder that those guns don''t point at you\nOh, oh\nOh, oh\ngo on\n(Keep sayin'') you won''t (live forever)\n(Keep sayin'') go on, (keep sayin'') go on\n(Keep sayin'') you won''t (live forever)\nPoint and shoot, I know just what you mean\nIn a world that''s full of shit and gasoline, babe\nOne dog''s dead, one''s on the phone, just leave a lung or leave it alone\nIt''s that same old song again, I hate it ''cause it''s true\nOh, oh\nOoh, ooh\ngo on\n(Keep sayin'') you won''t (live forever)\n(Keep sayin'') go on, (keep sayin'') go on\n(Keep sayin'') you won''t (live forever)', ARRAY['Josh Homme'], 'https://open.spotify.com/track/4NK1A89eLfNQPCoOLxLCSl?si=229cb66a9fb54a92');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Hispanic Impressions', 1, '2 minutes 44 seconds', '', ARRAY['Josh Homme', 'Alfredo Hernandez'], 'https://open.spotify.com/track/1mtkvxDegmLDbr57uA35uL?si=fb5e602b7d3c4b91');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('You Can''t Quit Me Baby', 1, '6 minutes 34 seconds', 'It''s a mistake, but who knows\nFollowed you home, crawled in your window\nThis life is a trip when you''re psycho in love\nAnd I know\nFollowed your friends, you were not there\nSlashed and I cut, I bled in the sink\nHeard what you said and you''re laughing maybe\nSlashed and I cut, and I do it for you\nI want you to notice when I''m not around\nWherever you are\nYou''re solid gold\nI''ll see you in hell\nYou''re solid gold\nI''ll see you in hell\nYou''re solid gold\nI''ll see you in hell\nYou''re solid gold\nI''ll see you in hell', ARRAY['Josh Homme', 'Alfredo Hernandez'], 'https://open.spotify.com/track/6n4a5O61MnE5m5XmagEJOP?si=080167f6680b4666');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Give the Mule What He Wants', 1, '3 minutes 9 seconds', 'The mule want it\nThe mule want it Sunday\nHe''ll eat it\nHe''ll eat it one day\nHow long, long\nDo I wait\nBe the mule that you gotta be, yeah\nUnderwater, underwater one day\nGonna sink it, make em think it''s too late\nFor your love\nFor your love\nBe the mule that you gotta be\nOh oh\nOh oh\nOh oh', ARRAY['Josh Homme', 'Alfredo Hernandez'], 'https://open.spotify.com/track/2oYgRG99obDl09ZW1i9P5C?si=58747f04f55143ec');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('I Was a Teenage Hand Model', 1, '5 minutes 1 seconds', 'Cozied up to the toilet\nFace stuck to the floor\nI met expectations\nThat I was tryin'' to ignore\nJob had such patience\nI wonder, what''s that like?\nOne hundred thousand million (oh yeah)\nThat''s what you like, so I was thinkin''\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nSo these cities are sprouting\nLike a spit in the eye\nAnd this world isn''t waiting\nIt''s just passin'' me by\nI just peak in the window\nLookin'' inside\nThe butcher''s got a fork in your face\nI''m standing alive, and I was singin''\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah', ARRAY['Josh Homme', 'Alfredo Hernandez'], 'https://open.spotify.com/track/58UC8YjPyQGldwvsK58YKl?si=70f365988c984646');
