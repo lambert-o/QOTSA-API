@@ -1,7 +1,7 @@
-package com.base.controller;
+package com.qotsa.api.controller;
 
-import com.base.domain.request.HelloRequest;
-import com.base.domain.response.HelloResponse;
+import com.qotsa.api.domain.request.HelloRequest;
+import com.qotsa.api.domain.response.HelloResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import static com.base.controller.HelloWorldController.HELLO_PATH;
+import static com.qotsa.api.controller.HelloWorldController.HELLO_PATH;
 
 @RequestMapping(value = HELLO_PATH, produces = MediaType.APPLICATION_JSON_VALUE)
 public interface HelloWorldControllerApiSpec {

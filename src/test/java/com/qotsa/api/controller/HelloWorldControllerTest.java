@@ -1,7 +1,7 @@
-package com.base.controller;
+package com.qotsa.api.controller;
 
-import com.base.domain.request.HelloRequest;
-import com.base.service.HelloService;
+import com.qotsa.api.domain.request.HelloRequest;
+import com.qotsa.api.service.HelloService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

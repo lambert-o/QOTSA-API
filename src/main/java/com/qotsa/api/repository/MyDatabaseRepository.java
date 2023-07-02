@@ -1,6 +1,6 @@
-package com.base.repository;
+package com.qotsa.api.repository;
 
-import com.base.dto.HelloDto;
+import com.qotsa.api.dto.HelloDto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

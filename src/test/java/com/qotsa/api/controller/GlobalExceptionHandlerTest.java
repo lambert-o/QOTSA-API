@@ -1,4 +1,4 @@
-package com.base.controller;
+package com.qotsa.api.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;

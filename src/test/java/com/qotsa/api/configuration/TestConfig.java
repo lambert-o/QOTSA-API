@@ -1,6 +1,6 @@
-package com.base.configuration;
+package com.qotsa.api.configuration;
 
-import com.base.Main;
+import com.qotsa.api.Main;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;

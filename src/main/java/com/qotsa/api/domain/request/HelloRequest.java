@@ -1,4 +1,4 @@
-package com.base.domain.request;
+package com.qotsa.api.domain.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

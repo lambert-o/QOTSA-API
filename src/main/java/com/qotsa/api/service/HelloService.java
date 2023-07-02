@@ -1,8 +1,8 @@
-package com.base.service;
+package com.qotsa.api.service;
 
-import com.base.domain.request.HelloRequest;
-import com.base.dto.HelloDto;
-import com.base.repository.MyDatabaseRepository;
+import com.qotsa.api.domain.request.HelloRequest;
+import com.qotsa.api.dto.HelloDto;
+import com.qotsa.api.repository.MyDatabaseRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

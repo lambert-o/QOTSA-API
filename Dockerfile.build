@@ -8,4 +8,4 @@ WORKDIR /usr/src/app
 RUN mvn clean compile assembly:single
 
 EXPOSE 8080
-CMD ["java", "-jar", "target/Spring-Boot-Base-API-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+CMD ["java", "-jar", "target/QOTSA-API-1.0-SNAPSHOT-jar-with-dependencies.jar"]

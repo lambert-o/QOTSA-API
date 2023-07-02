@@ -1,8 +1,6 @@
-# Spring-Boot-Base-API
+# QOTSA-API
 
-A Maven project to use as a base upon which to build an API in Java using SpringBoot.
-
-There are controller, domain and services layers alongside database interaction. Unit and integration testing has been implemented with code coverage enforcement.
+An API for Queens Of The Stone Age songs 🎸
 
 ## Requirements
 Java 17 or later
@@ -11,9 +9,9 @@ Maven 3.x.x or later
 
 ## Installation
 
-**Clone the repository**: git clone https://github.com/lambert-o/Spring-Boot-Base-API.git
+**Clone the repository**: git clone https://github.com/lambert-o/QOTSA-API
 
-**Navigate to the project directory**: cd Spring-Boot-Base-API
+**Navigate to the project directory**: cd QOTSA-API
 
 **Build the project**: make clean compile
 
@@ -29,6 +27,6 @@ A Postman collection can be found in [/assets](../assets)
 
 ## Docker
 
-**Build image**: docker build -f Dockerfile.build -t spring-boot-base-api .
+**Build image**: docker build -f Dockerfile.build -t qotsa-api .
 
-**Run image**: docker run -p 8080:8080 spring-boot-base-api
+**Run image**: docker run -p 8080:8080 qotsa-api

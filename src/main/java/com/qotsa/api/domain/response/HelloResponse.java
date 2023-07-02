@@ -1,4 +1,4 @@
-package com.base.domain.response;
+package com.qotsa.api.domain.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

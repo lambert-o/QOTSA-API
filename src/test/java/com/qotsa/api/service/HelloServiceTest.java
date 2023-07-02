@@ -1,7 +1,7 @@
-package com.base.service;
+package com.qotsa.api.service;
 
-import com.base.domain.request.HelloRequest;
-import com.base.repository.MyDatabaseRepository;
+import com.qotsa.api.domain.request.HelloRequest;
+import com.qotsa.api.repository.MyDatabaseRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
