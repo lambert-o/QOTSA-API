@@ -21,7 +21,7 @@ build:
 	mvn verify
 
 run:
-	mvn exec:java -Dexec.mainClass="com.base.Main"
+	mvn exec:java -Dexec.mainClass="com.qotsa.api.Main"
 
 clean:
 	mvn clean

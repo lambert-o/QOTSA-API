@@ -25,6 +25,6 @@ logging:
 
 openapi:
   info:
-      title: Spring-Boot-Base-API
-      description: A base on which to develop an API using Spring
+      title: QOTSA-API
+      description: An API for Queens Of The Stone Age songs
       version: 1.0.0

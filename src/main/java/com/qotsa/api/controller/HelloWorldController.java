@@ -1,8 +1,8 @@
-package com.base.controller;
+package com.qotsa.api.controller;
 
-import com.base.domain.request.HelloRequest;
-import com.base.domain.response.HelloResponse;
-import com.base.service.HelloService;
+import com.qotsa.api.domain.request.HelloRequest;
+import com.qotsa.api.domain.response.HelloResponse;
+import com.qotsa.api.service.HelloService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
