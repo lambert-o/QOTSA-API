@@ -1,0 +1,11 @@
+FROM maven:3.8.1-openjdk-17
+
+COPY pom.xml /usr/src/app/
+COPY src /usr/src/app/src/
+
+WORKDIR /usr/src/app
+
+RUN mvn clean compile assembly:single
+
+EXPOSE 8080
+CMD ["java", "-jar", "target/Spring-Boot-Base-API-1.0-SNAPSHOT-jar-with-dependencies.jar"]

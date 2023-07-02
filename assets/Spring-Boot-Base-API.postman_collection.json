@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "646464b1-27db-4ebf-bef6-8f0126cdb802",
+		"name": "Spring-Boot-Base-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Api Docs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SpringBootBaseUrl}}/v3/api-docs",
+					"host": [
+						"{{SpringBootBaseUrl}}"
+					],
+					"path": [
+						"v3",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{SpringBootBaseUrl}}/v1/my-controller/hello?name=Owen Lambert",
+					"host": [
+						"{{SpringBootBaseUrl}}"
+					],
+					"path": [
+						"v1",
+						"my-controller",
+						"hello"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Owen Lambert"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
