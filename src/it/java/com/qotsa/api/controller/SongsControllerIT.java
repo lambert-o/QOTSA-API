@@ -14,17 +14,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 @ContextConfiguration(classes = TestConfig.class)
-public class HelloWorldControllerIT {
+public class SongsControllerIT {
 
     @Autowired
     private MockMvc mockMvc;
 
     @Test
     void shouldReturnValidResponseWhenRequestValid() throws Exception {
-        String name = "Owen Lambert";
-        mockMvc.perform(get("/v1/my-controller/hello")
-                        .param("name", name))
+        mockMvc.perform(get("/v1/songs/random"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.response").value("Hello, Owen Lambert"));
+                .andExpect(jsonPath("$.response").exists())
+                .andExpect(jsonPath("$.response").isNotEmpty());
     }
 }

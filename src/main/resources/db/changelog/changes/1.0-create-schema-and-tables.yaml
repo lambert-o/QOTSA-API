@@ -39,7 +39,7 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: written_by
-                  type: text
+                  type: text[]
                   constraints:
                     nullable: false
               - column:
