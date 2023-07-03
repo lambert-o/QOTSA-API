@@ -1,0 +1,2 @@
+liquibase:
+  changeLogFile: src/main/resources/db/changelog/db.changelog-master.yaml

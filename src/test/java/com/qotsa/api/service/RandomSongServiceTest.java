@@ -31,15 +31,14 @@ public class RandomSongServiceTest {
     void shouldReturnValidResponseWhenRequestValid() {
         // given
         String[] artists = new String[]{"Josh Homme", "Alfredo Hernandez", "John McBain"};
-        SongDto songDto = SongDto.builder()
-                .song_id(1L)
-                .title("Regular John")
-                .album(1)
-                .duration(Time.valueOf("00:04:35"))
-                .lyrics("Who are you girl?...")
-                .writtenBy(artists)
-                .spotifyUrl("https://open.spotify.com/track/0R0m9mTXa81zp1qtcU3dSR?si=3f761edcdc2b4279")
-                .build();
+        SongDto songDto = new SongDto();
+        songDto.setSong_id(1L);
+        songDto.setTitle("Regular John");
+        songDto.setAlbum(1);
+        songDto.setDuration(Time.valueOf("00:04:35"));
+        songDto.setLyrics("Who are you girl?...");
+        songDto.setWrittenBy(artists);
+        songDto.setSpotifyUrl("https://open.spotify.com/track/0R0m9mTXa81zp1qtcU3dSR?si=3f761edcdc2b4279");
         given(songRepository.getRandom()).willReturn(songDto);
 
         // when

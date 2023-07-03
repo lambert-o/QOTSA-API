@@ -10,7 +10,6 @@ import java.sql.Time;
 @Entity
 @Data
 @Table(name = "songs", schema = "qotsa")
-@Builder
 public class SongDto {
 
     @Id

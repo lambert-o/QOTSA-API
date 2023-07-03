@@ -1,9 +1,0 @@
-spring:
-  datasource:
-    driver: org.h2.Driver
-    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
-    username: testuser
-    password: testpassword
-
-liquibase:
-  changeLogFile: src/main/resources/db/changelog/db.changelog-master.yaml
