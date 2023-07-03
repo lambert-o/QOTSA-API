@@ -14,7 +14,7 @@ public class HelloService {
     public String hello(HelloRequest helloRequest) {
         HelloDto helloDto = new HelloDto();
         helloDto.setName(helloRequest.getName());
-        myDatabaseRepository.save(helloDto);
+//        myDatabaseRepository.save(helloDto);
         return "Hello, " + helloRequest.getName();
     }
 }
