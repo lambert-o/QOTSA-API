@@ -3,7 +3,7 @@
 
 # Define required variables
 CONTAINER_NAME := mypostgres
-DB_NAME := mydatabase
+DB_NAME := qotsa_db
 DB_USER := postgres
 DB_PASSWORD := postgres
 
