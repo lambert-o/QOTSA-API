@@ -1,0 +1,8 @@
+liquibase:
+  changeLogFile: src/main/resources/db/changelog/db.changelog-master.yaml
+
+openapi:
+  info:
+    title: QOTSA-API
+    description: An API for Queens of the Stone Age songs
+    version: 1.0.0
