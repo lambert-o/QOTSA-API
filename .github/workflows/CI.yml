@@ -13,8 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Build image
-        run: docker build -f Dockerfile.build -t qotsa-api .
+      # - name: Build image
+      #   run: docker build -f Dockerfile.build -t qotsa-api .
 
       - name: Run tests
-        run: docker run qotsa-api:latest mvn clean verify
+        run: make clean build
