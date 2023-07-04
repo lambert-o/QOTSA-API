@@ -1,6 +1,6 @@
 # QOTSA-API
 
-An API for Queens Of The Stone Age songs 🎸
+An API for Queens of the Stone Age songs 🎸
 
 ## Requirements
 Java 17 or later
