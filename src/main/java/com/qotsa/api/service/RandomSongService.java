@@ -1,10 +1,11 @@
 package com.qotsa.api.service;
 
 import com.qotsa.api.domain.model.Song;
+import com.qotsa.api.dto.AlbumDto;
 import com.qotsa.api.dto.SongDto;
+import com.qotsa.api.repository.AlbumRepository;
 import com.qotsa.api.repository.SongRepository;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -12,10 +13,12 @@ import org.springframework.stereotype.Service;
 public class RandomSongService {
 
     private final SongRepository songRepository;
-    private final ModelMapper modelMapper;
+    private final AlbumRepository albumRepository;
     public Song getRandomSong() {
         SongDto songDto = songRepository.getRandom();
-        Song song = modelMapper.map(songDto, Song.class);
+        AlbumDto albumDto = albumRepository.getReferenceById(Long.valueOf(songDto.getAlbum()));
+        Song song = new Song(songDto.getTitle(), albumDto.getTitle(), songDto.getDuration(), songDto.getLyrics(),
+                songDto.getWrittenBy(), songDto.getSpotifyUrl());
         return song;
     }
 }

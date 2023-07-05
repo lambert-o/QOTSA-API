@@ -31,13 +31,7 @@ public class RandomAlbumServiceTest {
     @Test
     void shouldReturnValidResponseWhenRequestValid() {
         // given
-        AlbumDto albumDto = new AlbumDto();
-        albumDto.setAlbum_id(1L);
-        albumDto.setTitle("Queens of the Stone Age");
-        albumDto.setNumberOfSongs(11);
-        albumDto.setDuration(Time.valueOf("00:46:27"));
-        albumDto.setReleaseDate(Date.valueOf("1998-09-22"));
-        albumDto.setSpotifyUrl("https://open.spotify.com/album/0PSTqZ8cInMb1Wr68Uqdwp?si=7WqTEOlNTKaCdfhxeAf8Vg");
+        AlbumDto albumDto = createAlbumDto();
         given(albumRepository.getRandom()).willReturn(albumDto);
 
         // when
@@ -45,5 +39,16 @@ public class RandomAlbumServiceTest {
 
         // then
         assertEquals("Queens of the Stone Age", response.getTitle());
+    }
+
+    AlbumDto createAlbumDto() {
+        AlbumDto albumDto = new AlbumDto();
+        albumDto.setAlbum_id(1L);
+        albumDto.setTitle("Queens of the Stone Age");
+        albumDto.setNumberOfSongs(11);
+        albumDto.setDuration(Time.valueOf("00:46:27"));
+        albumDto.setReleaseDate(Date.valueOf("1998-09-22"));
+        albumDto.setSpotifyUrl("https://open.spotify.com/album/0PSTqZ8cInMb1Wr68Uqdwp?si=7WqTEOlNTKaCdfhxeAf8Vg");
+        return albumDto;
     }
 }
