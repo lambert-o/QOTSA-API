@@ -31,7 +31,7 @@ public class SongsControllerTest {
     void shouldReturnValidResponseWhenRequestValid() {
         // given
         String[] artists = new String[]{"Josh Homme", "Alfredo Hernandez", "John McBain"};
-        Song song = new Song("Regular John", 1, Time.valueOf("00:04:35"), "Who are you girl?...",
+        Song song = new Song("Regular John", "Queens of the Stone Age", Time.valueOf("00:04:35"), "Who are you girl?...",
                 artists, "https://open.spotify.com/track/0R0m9mTXa81zp1qtcU3dSR?si=3f761edcdc2b4279");
         given(randomSongService.getRandomSong()).willReturn(song);
 

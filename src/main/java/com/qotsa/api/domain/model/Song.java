@@ -11,7 +11,7 @@ import java.sql.Time;
 @AllArgsConstructor
 public class Song {
     public String title;
-    public int album;
+    public String album;
     public Time duration;
     public String lyrics;
     public String[] writtenBy;
