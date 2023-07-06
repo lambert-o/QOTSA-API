@@ -86,6 +86,13 @@ databaseChangeLog:
             referencedTableName: albums
             referencedColumnNames: album_id
             constraintName: fk_songs_albums
+        - createIndex:
+            indexName: idx_songs_album
+            tableName: songs
+            schemaName: qotsa
+            columns:
+              - column:
+                  name: album
         - sql:
             comment: Insert albums
             endDelimiter: ;GO
