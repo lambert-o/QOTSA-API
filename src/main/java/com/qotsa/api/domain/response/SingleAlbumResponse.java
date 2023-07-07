@@ -16,4 +16,5 @@ public class SingleAlbumResponse {
     public Time duration;
     public Date releaseDate;
     public String spotifyUrl;
+    public String[] songs;
 }

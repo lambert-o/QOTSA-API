@@ -32,7 +32,7 @@ public class AlbumsControllerTest {
     void shouldReturnValidResponseWhenRequestValid() {
         // given
         Album album = new Album("Queens of the Stone Age", 11, Time.valueOf("00:46:27"), Date.valueOf("1998-09-22"),
-                "https://open.spotify.com/album/0PSTqZ8cInMb1Wr68Uqdwp?si=7WqTEOlNTKaCdfhxeAf8Vg");
+                "https://open.spotify.com/album/0PSTqZ8cInMb1Wr68Uqdwp?si=7WqTEOlNTKaCdfhxeAf8Vg", new String[]{"Regular John"});
         given(randomAlbumService.getRandomAlbum()).willReturn(album);
 
         // when
