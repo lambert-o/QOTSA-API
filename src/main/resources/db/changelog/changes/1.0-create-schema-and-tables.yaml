@@ -141,3 +141,163 @@ databaseChangeLog:
                 VALUES ('Give the Mule What He Wants', 1, '00:03:09', 'The mule want it\nThe mule want it Sunday\nHe''ll eat it\nHe''ll eat it one day\nHow long, long\nDo I wait\nBe the mule that you gotta be, yeah\nUnderwater, underwater one day\nGonna sink it, make em think it''s too late\nFor your love\nFor your love\nBe the mule that you gotta be\nOh oh\nOh oh\nOh oh', ARRAY['Josh Homme', 'Alfredo Hernandez'], 'https://open.spotify.com/track/2oYgRG99obDl09ZW1i9P5C?si=58747f04f55143ec');
               INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
                 VALUES ('I Was a Teenage Hand Model', 1, '00:05:01', 'Cozied up to the toilet\nFace stuck to the floor\nI met expectations\nThat I was tryin'' to ignore\nJob had such patience\nI wonder, what''s that like?\nOne hundred thousand million (oh yeah)\nThat''s what you like, so I was thinkin''\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nSo these cities are sprouting\nLike a spit in the eye\nAnd this world isn''t waiting\nIt''s just passin'' me by\nI just peak in the window\nLookin'' inside\nThe butcher''s got a fork in your face\nI''m standing alive, and I was singin''\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah\nAh ah ah ah ah ah ah ah, ah ah ah, ah', ARRAY['Josh Homme', 'Alfredo Hernandez'], 'https://open.spotify.com/track/58UC8YjPyQGldwvsK58YKl?si=70f365988c984646');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Feel Good Hit of the Summer', 2, '00:02:43', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('The Lost Art of Keeping a Secret', 2, '00:03:36', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Leg of Lamb', 2, '00:02:48', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Auto Pilot', 2, '00:04:01', 'PLACEHOLDER', ARRAY['Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+               VALUES ('Better Living Through Chemistry', 2, '00:05:49', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Monsters in the Parasol', 2, '00:03:27', 'PLACEHOLDER', ARRAY['Josh Homme', 'Mario Lalli'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Quick and to the Pointless', 2, '00:01:42', 'PLACEHOLDER', ARRAY['Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('In the Fade (Includes a reprise of "Feel Good Hit of the Summer")', 2, '00:04:25', 'PLACEHOLDER', ARRAY['Josh Homme', 'Mark Lanegan'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Tension Head', 2, '00:02:52', 'PLACEHOLDER', ARRAY['Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Lightning Song', 2, '00:02:07', 'PLACEHOLDER', ARRAY['Dave Catching'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('I Think I Lost My Headache', 2, '00:08:40', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('The Real Song for the Deaf', 3, '00:01:32', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('You Think I Ain''t Worth a Dollar, But I Feel Like a Millionaire', 3, '00:03:12', 'PLACEHOLDER', ARRAY['Josh Homme', 'Mario Lalli'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('No One Knows', 3, '00:04:38', 'PLACEHOLDER', ARRAY['Josh Homme', 'Mark Lanegan'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('First It Giveth', 3, '00:03:18', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('A Song for the Dead', 3, '00:05:52', 'PLACEHOLDER', ARRAY['Josh Homme', 'Mark Lanegan'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('The Sky Is Fallin''', 3, '00:06:15', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Six Shooter', 3, '00:01:19', 'PLACEHOLDER', ARRAY['Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Hangin'' Tree', 3, '00:03:06', 'PLACEHOLDER', ARRAY['Josh Homme', 'Alain Johannes'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Go with the Flow', 3, '00:03:07', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Gonna Leave You', 3, '00:02:50', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Do It Again', 3, '00:04:04', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('God Is in the Radio', 3, '00:06:04', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Another Love Song', 3, '00:03:16', 'PLACEHOLDER', ARRAY['Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('A Song for the Deaf', 3, '00:06:42', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri', 'Mark Lanegan'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Mosquito Song', 3, '00:05:37', 'PLACEHOLDER', ARRAY['Josh Homme', 'Nick Oliveri'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('This Lullaby', 4, '00:01:22', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Medication', 4, '00:01:54', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo', 'Mark Lanegan'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Everybody Knows That You Are Insane', 4, '00:04:14', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Tangled Up in Plaid', 4, '00:04:13', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo', 'Mark Lanegan'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Burn the Witch', 4, '00:03:35', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('In My Head', 4, '00:04:01', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Josh Freese', 'Joey Castillo', 'Alain Johannes'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Little Sister', 4, '00:02:54', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('I Never Came', 4, '00:04:48', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Someone''s in the Wolf', 4, '00:07:15', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('The Blood Is Love', 4, '00:06:37', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Skin on Skin', 4, '00:03:42', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Broken Box', 4, '00:03:02', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('You Got a Killer Scene There, Man...', 4, '00:04:56', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Long Slow Goodbye', 4, '00:06:50', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo', 'Mark Lanegan'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Turnin'' on the Screw', 5, '00:05:20', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Sick, Sick, Sick', 5, '00:03:34', 'PLACEHOLDER', ARRAY['Josh Homme', 'Chris Goss', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('I''m Designer', 5, '00:04:04', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Into the Hollow', 5, '00:03:42', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Misfit Love', 5, '00:05:39', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Battery Acid', 5, '00:04:06', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Make It wit Chu', 5, '00:04:50', 'PLACEHOLDER', ARRAY['Josh Homme', 'Alain Johannes', 'Michael Melchiondo Jr'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('3''s & 7''s', 5, '00:03:34', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Suture Up Your Future', 5, '00:04:37', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('River in the Road', 5, '00:03:19', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Run, Pig, Run', 5, '00:04:40', 'PLACEHOLDER', ARRAY['Josh Homme', 'Troy Van Leeuwen', 'Joey Castillo'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Keep Your Eyes Peeled', 6, '00:05:04', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('I Sat by the Ocean', 6, '00:03:55', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('The Vampyre of Time and Memory', 6, '00:03:34', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('If I Had a Tail', 6, '00:04:55', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('My God Is the Sun', 6, '00:03:55', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Kalopsia', 6, '00:04:38', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Fairweather Friends', 6, '00:03:43', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen', 'Mark Lanegan'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Smooth Sailing', 6, '00:04:51', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('I Appear Missing', 6, '00:06:00', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('...Like Clockwork', 6, '00:05:24', 'PLACEHOLDER', ARRAY['Josh Homme', 'James Lavelle', 'Charlie May'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Feet Don''t Fail Me', 7, '00:05:41', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('The Way You Used to Do', 7, '00:04:34', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Domesticated Animals', 7, '00:05:20', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Fortress', 7, '00:05:27', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Head Like a Haunted House', 7, '00:03:21', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Un-Reborn Again', 7, '00:06:40', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Hideaway', 7, '00:04:18', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('The Evil Has Landed', 7, '00:06:30', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Villains of Circumstance', 7, '00:06:09', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Obscenery', 8, '00:04:23', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Jon Theodore', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Paper Machete', 8, '00:03:22', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Jon Theodore', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Negative Space', 8, '00:03:53', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Jon Theodore', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Time & Place', 8, '00:04:26', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Jon Theodore', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Made to Parade', 8, '00:05:18', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Jon Theodore', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Carnavoyeur', 8, '00:03:56', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Jon Theodore', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('What the Peephole Say', 8, '00:04:06', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Jon Theodore', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Sicily', 8, '00:04:41', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Jon Theodore', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Emotion Sickness', 8, '00:04:31', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Jon Theodore', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
+              INSERT INTO qotsa.songs (title, album, duration, lyrics, written_by, spotify_url)
+                VALUES ('Straight Jacket Fitting', 8, '00:09:01', 'PLACEHOLDER', ARRAY['Josh Homme', 'Dean Fertita', 'Jon Theodore', 'Michael Shuman','Troy Van Leeuwen'], 'PLACEHOLDER');
