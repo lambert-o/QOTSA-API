@@ -1,5 +1,8 @@
 package com.qotsa.api.controller;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.BDDMockito.given;
+
 import com.qotsa.api.domain.model.Album;
 import com.qotsa.api.service.RandomAlbumService;
 import java.sql.Date;
@@ -11,10 +14,6 @@ import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
-
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.BDDMockito.given;
 
 @ExtendWith(MockitoExtension.class)
 public class AlbumsControllerTest {

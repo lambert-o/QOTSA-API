@@ -18,8 +18,8 @@ public class RandomSongService {
   public Song getRandomSong() {
     SongDto songDto = songRepository.getRandom();
     AlbumDto albumDto = albumRepository.getReferenceById(Long.valueOf(songDto.getAlbum()));
-    Song song = new Song(songDto.getTitle(), albumDto.getTitle(), songDto.getDuration(), songDto.getLyrics(),
-            songDto.getWrittenBy(), songDto.getSpotifyUrl());
+    Song song = new Song(songDto.getTitle(), albumDto.getTitle(), songDto.getDuration(),
+            songDto.getLyrics(), songDto.getWrittenBy(), songDto.getSpotifyUrl());
     return song;
   }
 }

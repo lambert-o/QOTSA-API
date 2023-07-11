@@ -1,5 +1,8 @@
 package com.qotsa.api.service;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.BDDMockito.given;
+
 import com.qotsa.api.dto.AlbumDto;
 import com.qotsa.api.dto.SongDto;
 import com.qotsa.api.repository.AlbumRepository;
@@ -11,10 +14,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.BDDMockito.given;
 
 @ExtendWith(MockitoExtension.class)
 public class RandomSongServiceTest {
