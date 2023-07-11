@@ -44,7 +44,7 @@ public class RandomAlbumServiceTest {
 
   AlbumDto createAlbumDto() {
     AlbumDto albumDto = new AlbumDto();
-    albumDto.setAlbum_id(1L);
+    albumDto.setAlbumId(1L);
     albumDto.setTitle("Queens of the Stone Age");
     albumDto.setNumberOfSongs(11);
     albumDto.setDuration(Time.valueOf("00:46:27"));
@@ -56,7 +56,7 @@ public class RandomAlbumServiceTest {
   SongDto createSongDto() {
     String[] artists = new String[]{"Josh Homme", "Alfredo Hernandez", "John McBain"};
     SongDto songDto = new SongDto();
-    songDto.setSong_id(1L);
+    songDto.setSongId(1L);
     songDto.setTitle("Regular John");
     songDto.setAlbum(1);
     songDto.setDuration(Time.valueOf("00:04:35"));

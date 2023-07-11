@@ -36,7 +36,7 @@ public final class RandomAlbumService {
    */
   public Album getRandomAlbum() {
     AlbumDto albumDto = albumRepository.getRandom();
-    SongDto[] songDtos = songRepository.getAllFromAlbum(albumDto.getAlbum_id());
+    SongDto[] songDtos = songRepository.getAllFromAlbum(albumDto.getAlbumId());
     String[] songTitles = Arrays.stream(songDtos)
             .map(SongDto::getTitle)
             .toArray(String[]::new);

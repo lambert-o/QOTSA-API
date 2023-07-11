@@ -33,7 +33,7 @@ public class RandomSongServiceTest {
     SongDto songDto = createSongDto();
     AlbumDto albumDto = createAlbumDto();
     given(songRepository.getRandom()).willReturn(songDto);
-    given(albumRepository.getReferenceById(songDto.getSong_id())).willReturn(albumDto);
+    given(albumRepository.getReferenceById(songDto.getSongId())).willReturn(albumDto);
 
     // when
     var response = randomSongService.getRandomSong();
@@ -45,7 +45,7 @@ public class RandomSongServiceTest {
   SongDto createSongDto() {
     String[] artists = new String[]{"Josh Homme", "Alfredo Hernandez", "John McBain"};
     SongDto songDto = new SongDto();
-    songDto.setSong_id(1L);
+    songDto.setSongId(1L);
     songDto.setTitle("Regular John");
     songDto.setAlbum(1);
     songDto.setDuration(Time.valueOf("00:04:35"));
@@ -57,7 +57,7 @@ public class RandomSongServiceTest {
 
   AlbumDto createAlbumDto() {
     AlbumDto albumDto = new AlbumDto();
-    albumDto.setAlbum_id(1L);
+    albumDto.setAlbumId(1L);
     albumDto.setTitle("Queens of the Stone Age");
     albumDto.setNumberOfSongs(11);
     albumDto.setDuration(Time.valueOf("00:46:27"));
