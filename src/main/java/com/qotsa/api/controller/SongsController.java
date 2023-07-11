@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class SongsController implements SongsControllerApiSpec {
 
-    public static final String SONGS_PATH = "/v1/songs";
+  public static final String SONGS_PATH = "/v1/songs";
 
-    private final RandomSongService randomSongService;
-    private final ModelMapper modelMapper;
+  private final RandomSongService randomSongService;
+  private final ModelMapper modelMapper;
 
-    @Override
-    public ResponseEntity<SingleSongResponse> random() {
-        log.info("Calling random song service");
-        Song song = randomSongService.getRandomSong();
-        SingleSongResponse singleSongResponse = modelMapper.map(song, SingleSongResponse.class);
-        return ResponseEntity.ok(singleSongResponse);
-    }
+  @Override
+  public ResponseEntity<SingleSongResponse> random() {
+    log.info("Calling random song service");
+    Song song = randomSongService.getRandomSong();
+    SingleSongResponse singleSongResponse = modelMapper.map(song, SingleSongResponse.class);
+    return ResponseEntity.ok(singleSongResponse);
+  }
 }

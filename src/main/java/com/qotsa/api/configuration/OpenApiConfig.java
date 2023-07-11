@@ -9,21 +9,21 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class OpenApiConfig {
 
-    @Value("${openapi.info.title}")
-    private String title;
+  @Value("${openapi.info.title}")
+  private String title;
 
-    @Value("${openapi.info.description}")
-    private String description;
+  @Value("${openapi.info.description}")
+  private String description;
 
-    @Value("${openapi.info.version}")
-    private String version;
+  @Value("${openapi.info.version}")
+  private String version;
 
-    @Bean
-    public OpenAPI customOpenAPI() {
-        return new OpenAPI()
-                .info(new Info()
-                        .title(title)
-                        .description(description)
-                        .version(version));
-    }
+  @Bean
+  public OpenAPI customOpenAPI() {
+    return new OpenAPI()
+            .info(new Info()
+                    .title(title)
+                    .description(description)
+                    .version(version));
+  }
 }

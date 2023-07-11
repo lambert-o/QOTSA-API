@@ -3,6 +3,7 @@
 An API for Queens of the Stone Age songs 🎸
 
 ## Requirements
+
 Java 17 or later
 
 Maven 3.x.x or later
@@ -21,7 +22,8 @@ Maven 3.x.x or later
 
 **Start the API server**: make run
 
-Use Postman (or any other preferred method of making API requests) to **GET** http://localhost:8080/v3/api-docs for API documentation
+Use Postman (or any other preferred method of making API requests) to **GET** http://localhost:8080/v3/api-docs for API
+documentation
 
 A Postman collection can be found in [/assets](../assets)
 

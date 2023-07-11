@@ -25,6 +25,6 @@ logging:
 
 openapi:
   info:
-      title: QOTSA-API
-      description: An API for Queens of the Stone Age songs
-      version: 1.0.0
+    title: QOTSA-API
+    description: An API for Queens of the Stone Age songs
+    version: 1.0.0

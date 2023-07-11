@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AlbumRepository extends JpaRepository<AlbumDto, Long> {
 
-    @Query(value = "SELECT * FROM qotsa.albums ORDER BY RANDOM() LIMIT 1", nativeQuery = true)
-    AlbumDto getRandom();
+  @Query(value = "SELECT * FROM qotsa.albums ORDER BY RANDOM() LIMIT 1", nativeQuery = true)
+  AlbumDto getRandom();
 }

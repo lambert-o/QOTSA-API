@@ -9,9 +9,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SongRepository extends JpaRepository<SongDto, Long> {
 
-    @Query(value = "SELECT s FROM SongDto s ORDER BY RANDOM() LIMIT 1")
-    SongDto getRandom();
+  @Query(value = "SELECT s FROM SongDto s ORDER BY RANDOM() LIMIT 1")
+  SongDto getRandom();
 
-    @Query(value = "SELECT s FROM SongDto s WHERE s.album = :albumId")
-    SongDto[] getAllFromAlbum(@Param("albumId") Long albumId);
+  @Query(value = "SELECT s FROM SongDto s WHERE s.album = :albumId")
+  SongDto[] getAllFromAlbum(@Param("albumId") Long albumId);
 }

@@ -12,13 +12,14 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class RandomSongService {
 
-    private final SongRepository songRepository;
-    private final AlbumRepository albumRepository;
-    public Song getRandomSong() {
-        SongDto songDto = songRepository.getRandom();
-        AlbumDto albumDto = albumRepository.getReferenceById(Long.valueOf(songDto.getAlbum()));
-        Song song = new Song(songDto.getTitle(), albumDto.getTitle(), songDto.getDuration(), songDto.getLyrics(),
-                songDto.getWrittenBy(), songDto.getSpotifyUrl());
-        return song;
-    }
+  private final SongRepository songRepository;
+  private final AlbumRepository albumRepository;
+
+  public Song getRandomSong() {
+    SongDto songDto = songRepository.getRandom();
+    AlbumDto albumDto = albumRepository.getReferenceById(Long.valueOf(songDto.getAlbum()));
+    Song song = new Song(songDto.getTitle(), albumDto.getTitle(), songDto.getDuration(), songDto.getLyrics(),
+            songDto.getWrittenBy(), songDto.getSpotifyUrl());
+    return song;
+  }
 }
