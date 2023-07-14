@@ -24,3 +24,9 @@ jobs:
 
       - name: Run tests
         run: make clean build
+
+      - name: Upload test coverage report
+        uses: actions/upload-artifact@v2
+        with:
+          name: Test coverage
+          path: target/site/jacoco-aggregate/index.html
