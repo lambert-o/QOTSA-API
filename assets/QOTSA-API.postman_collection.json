@@ -1,75 +1,75 @@
 {
-  "info": {
-    "_postman_id": "baf00534-c4d7-4cf6-84d2-72daf7b7b9a6",
-    "name": "QOTSA-API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "Songs",
-      "item": [
-        {
-          "name": "Random",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{QotsaApiUrl}}/v1/songs/random",
-              "host": [
-                "{{QotsaApiUrl}}"
-              ],
-              "path": [
-                "v1",
-                "songs",
-                "random"
-              ]
-            }
-          },
-          "response": []
-        }
-      ]
-    },
-    {
-      "name": "Albums",
-      "item": [
-        {
-          "name": "Random",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{QotsaApiUrl}}/v1/albums/random",
-              "host": [
-                "{{QotsaApiUrl}}"
-              ],
-              "path": [
-                "v1",
-                "albums",
-                "random"
-              ]
-            }
-          },
-          "response": []
-        }
-      ]
-    },
-    {
-      "name": "Api Docs",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "{{QotsaApiUrl}}/v3/api-docs",
-          "host": [
-            "{{QotsaApiUrl}}"
-          ],
-          "path": [
-            "v3",
-            "api-docs"
-          ]
-        }
-      },
-      "response": []
-    }
-  ]
+	"info": {
+		"_postman_id": "baf00534-c4d7-4cf6-84d2-72daf7b7b9a6",
+		"name": "QOTSA-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Songs",
+			"item": [
+				{
+					"name": "Random",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{QotsaApiUrl}}/v1/songs/random",
+							"host": [
+								"{{QotsaApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"songs",
+								"random"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Albums",
+			"item": [
+				{
+					"name": "Random",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{QotsaApiUrl}}/v1/albums/random",
+							"host": [
+								"{{QotsaApiUrl}}"
+							],
+							"path": [
+								"v1",
+								"albums",
+								"random"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Api Docs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{QotsaApiUrl}}/v3/api-docs",
+					"host": [
+						"{{QotsaApiUrl}}"
+					],
+					"path": [
+						"v3",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
 }
