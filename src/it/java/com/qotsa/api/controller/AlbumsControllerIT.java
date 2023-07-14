@@ -1,5 +1,9 @@
 package com.qotsa.api.controller;
 
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -11,33 +15,28 @@ import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 @SpringBootTest(properties = "spring.config.name=application-integration-test")
 @AutoConfigureMockMvc
 @Testcontainers
 public class AlbumsControllerIT {
 
-    @Autowired
-    private MockMvc mockMvc;
+  @Container
+  static PostgreSQLContainer<?> postgreSQL = new PostgreSQLContainer<>();
+  @Autowired
+  private MockMvc mockMvc;
 
-    @Container
-    static PostgreSQLContainer<?> postgreSQL = new PostgreSQLContainer<>();
+  @DynamicPropertySource
+  static void postgreSQLProperties(DynamicPropertyRegistry registry) {
+    registry.add("spring.datasource.url", postgreSQL::getJdbcUrl);
+    registry.add("spring.datasource.username", postgreSQL::getUsername);
+    registry.add("spring.datasource.password", postgreSQL::getPassword);
+  }
 
-    @DynamicPropertySource
-    static void postgreSQLProperties(DynamicPropertyRegistry registry) {
-        registry.add("spring.datasource.url", postgreSQL::getJdbcUrl);
-        registry.add("spring.datasource.username", postgreSQL::getUsername);
-        registry.add("spring.datasource.password", postgreSQL::getPassword);
-    }
-
-    @Test
-    void shouldReturnValidResponseWhenRequestValid() throws Exception {
-        mockMvc.perform(get("/v1/albums/random"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.title").exists())
-                .andExpect(jsonPath("$.title").isNotEmpty());
-    }
+  @Test
+  void shouldReturnValidResponseWhenRequestValid() throws Exception {
+    mockMvc.perform(get("/v1/albums/random"))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.title").exists())
+            .andExpect(jsonPath("$.title").isNotEmpty());
+  }
 }

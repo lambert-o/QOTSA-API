@@ -1,33 +1,39 @@
 package com.qotsa.api.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.persistence.*;
-import lombok.Data;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.sql.Date;
 import java.sql.Time;
+import lombok.Data;
 
+/**
+ * DTO (Data Transfer Object) class for an album.
+ */
 @Entity
 @Data
 @Table(name = "albums", schema = "qotsa")
 public class AlbumDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long album_id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long albumId;
 
-    @Schema(description = "The title of an album", example = "Queens of the Stone Age")
-    public String title;
+  @Schema(description = "The title of an album", example = "Queens of the Stone Age")
+  public String title;
 
-    @Schema(description = "The number of songs in the album", example = "11")
-    public int numberOfSongs;
+  @Schema(description = "The number of songs in the album", example = "11")
+  public int numberOfSongs;
 
-    @Schema(description = "The duration of an album", example = "00:46:27")
-    public Time duration;
+  @Schema(description = "The duration of an album", example = "00:46:27")
+  public Time duration;
 
-    @Schema(description = "The album release date", example = "1998-09-22")
-    public Date releaseDate;
+  @Schema(description = "The album release date", example = "1998-09-22")
+  public Date releaseDate;
 
-    @Schema(description = "The url to an album on Spotify", example = "https://open.spotify.com/album/0PSTqZ8cInMb1Wr68Uqdwp?si=7WqTEOlNTKaCdfhxeAf8Vg")
-    public String spotifyUrl;
+  @Schema(description = "The url to an album on Spotify", example = "https://open.spotify.com/album/0PSTqZ8cInMb1Wr68Uqdwp?si=7WqTEOlNTKaCdfhxeAf8Vg")
+  public String spotifyUrl;
 }
