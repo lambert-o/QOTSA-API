@@ -1,11 +1,18 @@
 package com.qotsa.api.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.sql.Date;
 import java.sql.Time;
 import lombok.Data;
 
+/**
+ * DTO (Data Transfer Object) class for an album.
+ */
 @Entity
 @Data
 @Table(name = "albums", schema = "qotsa")

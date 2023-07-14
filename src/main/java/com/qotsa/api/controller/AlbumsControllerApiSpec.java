@@ -13,6 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * API specification for album-related endpoints.
+ */
 @RequestMapping(value = ALBUMS_PATH, produces = MediaType.APPLICATION_JSON_VALUE)
 public interface AlbumsControllerApiSpec {
 

@@ -11,16 +11,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * Service class for retrieving a random album from the repository.
- *
- * <p>This class provides a service for fetching a random album from the {@link AlbumRepository}.
- * It utilizes the {@link SongRepository} to retrieve the associated songs for the album.
- * The retrieved album data is used to create an {@link Album} object, which is then returned.</p>
- *
- * @see AlbumRepository
- * @see SongRepository
- * @see AlbumDto
- * @see SongDto
- * @see Album
  */
 @Service
 @RequiredArgsConstructor
