@@ -35,7 +35,7 @@
 - [ ] Proper documentation and comments have been added (if applicable)
 - [ ] The existing unit tests pass and new tests have been added (if applicable)
 - [ ] Code formatting and style guidelines have been followed
-- [ ] The commit messages follow the conventional format: `<type>: <subject>` (e.g., `feat: Add new feature`)
+- [ ] The commit messages follow the conventional format: `[<type>] <subject>` (e.g., `[feat] Add new feature`)
 - [ ] All dependencies are updated to their latest versions
 - [ ] The code follows best practices and doesn't introduce any security vulnerabilities
 
