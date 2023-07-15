@@ -32,5 +32,5 @@ jobs:
       - name: Upload test coverage report
         uses: actions/upload-artifact@v2
         with:
-          name: "Test Coverage - PR: ${{ steps.pr_info.outputs.title }}"
+          name: "Test Coverage - PR: '${{ steps.pr_info.outputs.title }}'"
           path: target/site/jacoco-aggregate
