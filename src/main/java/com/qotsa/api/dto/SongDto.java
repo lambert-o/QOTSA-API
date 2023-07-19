@@ -31,7 +31,7 @@ public class SongDto {
   public Time duration;
 
   @Schema(description = "The lyrics of a song", example = "Who are you girl?...")
-  public String lyrics;
+  public String[] lyrics;
 
   @Schema(description = "A String array of artists who wrote the song", example = "['Josh Homme']")
   public String[] writtenBy;

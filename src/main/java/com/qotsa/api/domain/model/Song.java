@@ -31,7 +31,7 @@ public class Song {
   /**
    * The lyrics of the song.
    */
-  public String lyrics;
+  public String[] lyrics;
 
   /**
    * The list of people who wrote the song.
