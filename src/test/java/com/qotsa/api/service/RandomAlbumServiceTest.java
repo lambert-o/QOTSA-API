@@ -60,7 +60,7 @@ public class RandomAlbumServiceTest {
     songDto.setTitle("Regular John");
     songDto.setAlbum(1);
     songDto.setDuration(Time.valueOf("00:04:35"));
-    songDto.setLyrics("Who are you girl?...");
+    songDto.setLyrics(new String[]{"Who are you girl?..."});
     songDto.setWrittenBy(artists);
     songDto.setSpotifyUrl("https://open.spotify.com/track/0R0m9mTXa81zp1qtcU3dSR?si=3f761edcdc2b4279");
     return songDto;
